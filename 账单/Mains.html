@@ -1,0 +1,256 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="image/logo/logo.ico" rel="SHORTCUT ICON" /><!--头图片-->
+    <link href="CSS/CSS3.css" rel="stylesheet" />
+    <script src="js/jquery-3.2.1.min (1).js"></script>
+    <title>我的账单</title>
+    <style>
+ 
+    </style>
+</head>
+<body>
+    <div class="top">
+        <div class="top2">
+            <div class="logo">
+                <p>
+                    <img src="image/logo/logo.png" style="width:100px;height:23px;" />
+                </p>
+            </div>
+            <div class="menuDiv">
+                <ul>
+                    <li><a href="Mains.html">首页</a></li>
+                    <li><a href="Insert.html">写账单</a></li>
+                    <li>
+                        <a href="#">看账单</a>
+                        <ul>
+                            <li><a href="#">查看当年</a></li>
+                            <li><a href="#">查看月年</a></li>
+                            <li><a href="#">查看日年</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="topright" id="btnlogin">
+                <a href="Login.html" class="a">登录</a>|
+                <a href="Register.html" class="a">注册</a>
+            </div><!--登录注册-->
+        </div><!--报头-->
+        <div class="slider">
+            <div class="slider-img">
+                <ul class="slider-img-ul">
+                    <li><img src="image/picture/吃饭01.png" /></li>
+                    <li><img src="image/picture/旅游娱乐.png" /></li>
+                    <li><img src="image/picture/购物.png" /></li>
+                    <li><img src="image/picture/交通工具.png" /></li>
+                    <li><img src="image/picture/吃饭01.png" /></li>
+                    <li><img src="image/picture/旅游娱乐.png" /></li>
+                </ul>
+            </div>
+        </div><!--图片轮播-->
+        <div style="width:1150px;height:170px;margin:20px auto;display:flex;justify-content:space-around;">
+            <div style="width:209px;height:169px;">
+                <img src="image/food/奶茶.jpg" />
+            </div>
+            <div style="width:209px;height:169px;">
+                <img src="image/food/吃饭01.jpg" />
+            </div>
+            <div style="width:209px;height:169px;">
+                <img src="image/clothes/衣服.jpg" />
+            </div>
+            <div style="width:209px;height:169px;">
+                <img src="image/Other/瓶子.jpg" />
+            </div>
+            <div style="width:209px;height:169px;">
+                <img src="image/Other/其他.jpg" />
+            </div>
+        </div><!--图片-->
+        <div class="middle" id="middle">
+            <ul>
+                <li style="border-left:1px solid #fff;"><a href="">年</a></li>
+                <li style="border-left:1px solid #fff;border-right:1px solid #fff"><a href="">月</a></li>
+                <li style="border-right:1px solid #fff;"><a href="">日</a></li>
+            </ul>
+        </div><!--悬浮-->
+        <div class="datadiv">
+            <!--<div class="datadivs">
+                <div class="data">
+                    <div >
+                        <img src="image/food/水果.jpg" />
+                    </div>
+                    <div class="money">
+                        消费：33元
+                    </div>
+                    <div class="money2">
+                        买水果：10元，吃面条：10元，打桌球：2元，买纸巾：11元
+                    </div>
+                    <hr />
+                    <div>
+                        <div class="img"><img src="image/payment/支付宝.jpg" /></div>
+                        <div class="time">
+                            时间：2018/3/15
+                        </div>
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="image/clothes/衣服02.jpg" />
+                    </div>
+                    <div class="money">
+                        消费：20元
+                    </div>
+                    <div class="money2">
+                        买衣服：20元
+                    </div>
+                    <hr />
+                    <div>
+                        <div class="img"><img src="image/payment/现金.jpg" /></div>
+                        <div class="time">
+                            时间：2018/3/16
+                        </div>
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="image/clothes/鞋子.jpg" />
+                    </div>
+                    <div class="money">
+                        消费 ：20元
+                    </div>
+                    <div class="money2">
+                        买鞋子：20元
+                    </div>
+                    <hr />
+                    <div >
+                        <div class="img"><img src="image/payment/微信.jpg" /></div>
+                        <div class="time">时间：2018/3/17</div>
+                    </div>
+
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="image/food/吃饭.jpg" />
+                    </div>
+                    <div class="money">
+                        消费：10元
+                    </div>
+                    <div class="money2">
+                        吃面条：10元
+                    </div>
+                    <hr />
+                    <div>
+                        <div class="img"><img src="image/payment/银行卡.jpg" /></div>
+                        <div class="time">
+                            时间：2018/3/18
+                        </div>
+                    </div>
+                </div>
+                <div class="data">
+                    <div>
+                        <img src="image/clothes/衣服01.jpg" />
+                    </div>
+                    <div class="money">
+                        消费：100元
+                    </div>
+                    <div class="money2">
+                        买衣服：100元
+                    </div>
+                    <hr />
+                    <div>
+                        <div class="img"><img src="image/payment/微信.jpg" /></div>
+                        <div class="time">
+                            时间：2018/3/19
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="background-color:#f4f4f4; width:1150px;margin:20px auto;display:flex;justify-content:space-around;">
+                <div style="background-color:white;border-radius:4px; width:210px;height:300px;"></div>
+                <div style="background-color:white;border-radius:4px; width:210px;height:300px;"></div>
+                <div style="background-color:white;border-radius:4px; width:210px;height:300px;"></div>
+                <div style="background-color:white;border-radius:4px; width:210px;height:300px;"></div>
+                <div style="background-color:white;border-radius:4px; width:210px;height:300px;"></div>
+            </div>-->
+            <div class="datadivs" id="pic">
+
+            </div>
+            <div style="width:100%;height:30px;margin:0 auto;">
+                <div id="page" class="page_div"></div>
+            </div>
+        </div><!--显示数据-->
+    </div>
+    <div style="width:100%;height:230px;background-color:#282828;margin:20px 0 0 0 ;"></div>
+    <script src="js/xSlider.js"></script>
+    <script src="js/paging.js"></script>
+    <script>
+       
+
+        $(function () {
+           
+            //登录
+            $.ajax({
+                url: "../SQLData/mainLogin.ashx",
+                type: "Get",
+                success: function (data) {
+                    if (data != 0) {
+                        $("#btnlogin").empty();
+                        $("#btnlogin").append("<a href='Login.html' style='text-decoration: none;color:'>" + data + "</a>");
+                        //、
+                        var pageindex = 1;
+                        var pageNumber = 15;
+                        var data = { "pageindex": pageindex, "pagenumber": pageNumber };
+                        $.ajax({
+                            url: "../SQLData/ConsumeInfo.ashx",
+                            type: "Get",
+                            dataType: "Json",
+                            data: data,
+                            success: function (data) {
+                                //console.log(data);
+                                $.each(data.result, function (i, obj) {
+                                    $("#pic").append("<div class='data'><div><img src='" + obj.Cimage + "'/></div><div class='money'>消费：" + obj.Cmoney + "</div><div class='money2'>" + obj.Cexplain + "</div><hr/><div><div class='img'><img src='image/payment/" + obj.Ctype + ".jpg' /></div><div class='time'>时间：" + data_string(obj.Ctime) + "</div></div><div>")
+                                })
+                                $("#page").paging({
+                                    PageNo: 1,
+                                    totalPage: data.PageCount,
+                                    callback: function (num) {
+                                        $("#pic").html("");
+                                        $.getJSON("../SQLData/ConsumeInfo.ashx", { "pageindex": num, "pagenumber": pageNumber }, function (data) {
+                                            $.each(data.result, function (i, obj) {
+
+                                                $("#pic").append("<div class='data'><div><img src='" + obj.Cimage + "'/></div><div class='money'>消费：" + obj.Cmoney + "</div><div class='money2'>" + obj.Cexplain + "</div><hr/><div><div class='img'><img src='image/payment/" + obj.Ctype + ".jpg' /></div><div class='time'>时间：" + data_string(obj.Ctime) + "</div></div><div>")
+                                            })
+                                        })
+                                    }
+                                })
+
+                            }
+
+                        })
+
+
+                    }
+                }
+            })
+
+           
+            //时间转换格式
+            function data_string(str) {
+                var d = eval('new ' + str.substr(1, str.length - 2));
+                var ar_date = [d.getFullYear(), d.getMonth() + 1, d.getDate()];
+                for (var i = 0; i < ar_date.length; i++) ar_date[i] = dFormat(ar_date[i]);
+                return ar_date.join('-');
+
+                function dFormat(i) { return i < 10 ? "0" + i.toString() : i; }
+            }
+        })
+
+            
+               
+
+
+         
+        
+    </script>
+</body>
+</html> 

@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="CSS/Register.css" rel="stylesheet" />
+    <link href="image/logo/logo.ico" rel="SHORTCUT ICON" /><!--头图片-->
+    <title>注册</title>
+    <style>
+    </style>
+    <script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body style="background-image:url(image/background/国民女生.jpg)">
+    <div class="login">
+        <div class="head">
+            <h2>账号注册</h2>
+        </div>
+        <div style="text-align:center">
+            <div class="reg">
+                <a href="Mains.html">返回首页</a>
+                <a style="margin:0 50px;">|</a>
+                <a href="Login.html">用户登录</a>
+            </div>
+            <div><input type="text" class="test" name="name" placeholder="用户名" autocomplete="off" maxlength="20" onchange="if (/^\s*$/g.test(this.value)) { alert('姓名不能空哦！') }"/></div>
+            <div><input type="text" class="test" name="Phone" placeholder="手机号" autocomplete="off" maxlength="11" onchange="if(/\D/.test(this.value)){alert('手机号只能是数字哦！');this.value='';}if (/^\s*$/g.test(this.value)) { alert('账号密码不能空哦！') }" /></div>
+            <div><input type="password" class="test" name="pwd" placeholder="密码" autocomplete="off" maxlength="20" onchange="if (/^\s*$/g.test(this.value)) { alert('账号密码不能空哦！') }" /></div>
+            <div class="test3"><input type="button" class="test2" name="btnRegis" value="注册" /></div>
+        </div>
+    </div>
+    <script>
+        $('input[name=btnRegis]').click(function () {
+            console.log($("input[name=name]").val());
+            $.ajax({
+                type: "post",
+                url: "SQLData/Register.ashx",
+                data: { "phone": $('input[name=Phone]').val(), "pwd": $('input[name=pwd]').val(), "name": $('input[name=name]').val() },
+                success: function (data) {
+                    if (data == 1) {
+                        //window.location.href = "Login.html";
+                        alert("注册成功！");
+                    }
+                    else {
+                        alert("注册失败！");
+                    }
+                    
+                }
+            })
+        });
+    </script>
+</body>
+</html>

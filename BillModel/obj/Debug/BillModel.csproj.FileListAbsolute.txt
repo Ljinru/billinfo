@@ -1,0 +1,12 @@
+D:\个人项目测试版\账单\BillModel\bin\Debug\BillModel.dll
+D:\个人项目测试版\账单\BillModel\bin\Debug\BillModel.pdb
+D:\个人项目测试版\账单\BillModel\obj\Debug\BillModel.csprojResolveAssemblyReference.cache
+D:\个人项目测试版\账单\BillModel\obj\Debug\BillModel.csproj.CoreCompileInputs.cache
+D:\个人项目测试版\账单\BillModel\obj\Debug\BillModel.dll
+D:\个人项目测试版\账单\BillModel\obj\Debug\BillModel.pdb
+H:\个人项目测试版\账单\BillModel\bin\Debug\BillModel.dll
+H:\个人项目测试版\账单\BillModel\bin\Debug\BillModel.pdb
+H:\个人项目测试版\账单\BillModel\obj\Debug\BillModel.csproj.CoreCompileInputs.cache
+H:\个人项目测试版\账单\BillModel\obj\Debug\BillModel.dll
+H:\个人项目测试版\账单\BillModel\obj\Debug\BillModel.pdb
+H:\个人项目测试版\账单\BillModel\obj\Debug\BillModel.csprojResolveAssemblyReference.cache

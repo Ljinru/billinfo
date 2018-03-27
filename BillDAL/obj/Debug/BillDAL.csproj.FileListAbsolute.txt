@@ -1,0 +1,17 @@
+D:\个人项目测试版\账单\BillDAL\bin\Debug\BillDAL.dll
+D:\个人项目测试版\账单\BillDAL\bin\Debug\BillDAL.pdb
+D:\个人项目测试版\账单\BillDAL\bin\Debug\BillModel.dll
+D:\个人项目测试版\账单\BillDAL\bin\Debug\BillModel.pdb
+D:\个人项目测试版\账单\BillDAL\obj\Debug\BillDAL.csprojResolveAssemblyReference.cache
+D:\个人项目测试版\账单\BillDAL\obj\Debug\BillDAL.csproj.CoreCompileInputs.cache
+D:\个人项目测试版\账单\BillDAL\obj\Debug\BillDAL.dll
+D:\个人项目测试版\账单\BillDAL\obj\Debug\BillDAL.pdb
+H:\个人项目测试版\账单\BillDAL\bin\Debug\BillDAL.dll
+H:\个人项目测试版\账单\BillDAL\bin\Debug\BillDAL.pdb
+H:\个人项目测试版\账单\BillDAL\bin\Debug\BillModel.dll
+H:\个人项目测试版\账单\BillDAL\bin\Debug\BillModel.pdb
+H:\个人项目测试版\账单\BillDAL\obj\Debug\BillDAL.csprojResolveAssemblyReference.cache
+H:\个人项目测试版\账单\BillDAL\obj\Debug\BillDAL.csproj.CoreCompileInputs.cache
+H:\个人项目测试版\账单\BillDAL\obj\Debug\BillDAL.csproj.CopyComplete
+H:\个人项目测试版\账单\BillDAL\obj\Debug\BillDAL.dll
+H:\个人项目测试版\账单\BillDAL\obj\Debug\BillDAL.pdb

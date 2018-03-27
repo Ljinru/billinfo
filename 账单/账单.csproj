@@ -1,0 +1,243 @@
+﻿<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props" Condition="Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{08561095-D0A2-41F4-8A40-6D642B4109FC}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>账单</RootNamespace>
+    <AssemblyName>账单</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform, Version=1.0.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="CSS\Insert.css" />
+    <Content Include="CSS\Login.css" />
+    <Content Include="CSS\CSS3.css" />
+    <Content Include="CSS\Register.css" />
+    <Content Include="image\logo\logo.ico" />
+    <Content Include="image\logo\logo.png" />
+    <Content Include="image\Vehicle\公交车01.jpg" />
+    <Content Include="image\Vehicle\公交车02.jpg" />
+    <Content Include="image\Vehicle\小汽车.jpg" />
+    <Content Include="image\Vehicle\摩托车.jpg" />
+    <Content Include="image\Vehicle\汽车.jpg" />
+    <Content Include="image\Vehicle\汽车01.jpg" />
+    <Content Include="image\Vehicle\汽车02.jpg" />
+    <Content Include="image\Vehicle\自行车.jpg" />
+    <Content Include="image\Vehicle\自行车01.jpg" />
+    <Content Include="image\Vehicle\自行车02.jpg" />
+    <Content Include="image\Other\其他.jpg" />
+    <Content Include="image\Other\摩天轮.jpg" />
+    <Content Include="image\Other\瓶子.jpg" />
+    <Content Include="image\Picture\交通工具.png" />
+    <Content Include="image\Picture\吃饭.png" />
+    <Content Include="image\Picture\吃饭01.png" />
+    <Content Include="image\Picture\旅游娱乐.png" />
+    <Content Include="image\Picture\购物.png" />
+    <Content Include="image\payment\微信.jpg" />
+    <Content Include="image\payment\支付宝.jpg" />
+    <Content Include="image\payment\现金.jpg" />
+    <Content Include="image\payment\银行卡.jpg" />
+    <Content Include="image\background\国民女生.jpg" />
+    <Content Include="image\background\美女.jpg" />
+    <Content Include="image\clothes\衣服.jpg" />
+    <Content Include="image\clothes\衣服01.jpg" />
+    <Content Include="image\clothes\衣服02.jpg" />
+    <Content Include="image\clothes\衣服03.jpg" />
+    <Content Include="image\clothes\衣服04.jpg" />
+    <Content Include="image\clothes\衣服05.jpg" />
+    <Content Include="image\clothes\衣服06.jpg" />
+    <Content Include="image\clothes\衣服07.jpg" />
+    <Content Include="image\clothes\衣服08.jpg" />
+    <Content Include="image\clothes\衣服09.jpg" />
+    <Content Include="image\clothes\衣服10.jpg" />
+    <Content Include="image\clothes\鞋子.jpg" />
+    <Content Include="image\food\吃饭.jpg" />
+    <Content Include="image\food\吃饭01.jpg" />
+    <Content Include="image\food\吃饭02.jpg" />
+    <Content Include="image\food\吃饭03.jpg" />
+    <Content Include="image\food\吃饭04.jpg" />
+    <Content Include="image\food\吃饭05.jpg" />
+    <Content Include="image\food\吃饭06.jpg" />
+    <Content Include="image\food\吃饭07.jpg" />
+    <Content Include="image\food\吃饭08.jpg" />
+    <Content Include="image\food\吃饭09.jpg" />
+    <Content Include="image\food\吃饭11.jpg" />
+    <Content Include="image\food\吃饭12.jpg" />
+    <Content Include="image\food\奶茶.jpg" />
+    <Content Include="image\food\奶茶01.jpg" />
+    <Content Include="image\food\奶茶02.jpg" />
+    <Content Include="image\food\奶茶03.jpg" />
+    <Content Include="image\food\水果.jpg" />
+    <Content Include="image\food\水果01.jpg" />
+    <Content Include="image\food\水果02.jpg" />
+    <Content Include="image\food\水果03.jpg" />
+    <Content Include="image\food\水果04.jpg" />
+    <Content Include="image\food\水果05.jpg" />
+    <Content Include="image\food\菜.jpg" />
+    <Content Include="image\food\饮料.jpg" />
+    <Content Include="image\Other\暂无图片.jpg" />
+    <Content Include="index.html" />
+    <Content Include="Insert.html" />
+    <Content Include="js\jquery-3.2.1.min %281%29.js" />
+    <Content Include="image\Other\点击添加图片.jpg" />
+    <None Include="packages.config" />
+    <Content Include="js\jquery-3.2.1.min.js" />
+    <Content Include="js\paging.js" />
+    <Content Include="SQLData\ConsumeInfo.ashx" />
+    <Content Include="SQLData\CustomerLogin.ashx" />
+    <Content Include="SQLData\mainLogin.ashx" />
+    <Content Include="SQLData\Register.ashx" />
+    <Content Include="SQLData\Insert.ashx" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Global.asax" />
+    <Content Include="js\xSlider.js" />
+    <Content Include="Login.html" />
+    <Content Include="Mains.html" />
+    <Content Include="Register.html" />
+    <Content Include="test.html" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SQLData\ConsumeInfo.ashx.cs">
+      <DependentUpon>ConsumeInfo.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLData\CustomerLogin.ashx.cs">
+      <DependentUpon>CustomerLogin.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLData\Insert.ashx.cs">
+      <DependentUpon>Insert.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLData\Register.ashx.cs">
+      <DependentUpon>Register.ashx</DependentUpon>
+    </Compile>
+    <Compile Include="SQLData\mainLogin.ashx.cs">
+      <DependentUpon>mainLogin.ashx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Models\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BillBLL\BillBLL.csproj">
+      <Project>{60e267b1-e392-454a-8a91-a8387a59a8c4}</Project>
+      <Name>BillBLL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BillDAL\BillDAL.csproj">
+      <Project>{c726a209-416c-40e2-9118-5a3b2c66fb80}</Project>
+      <Name>BillDAL</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\BillModel\BillModel.csproj">
+      <Project>{8f894f4b-b72f-4ee7-870a-6feca51d2615}</Project>
+      <Name>BillModel</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>62695</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:62695/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>这台计算机上缺少此项目引用的 NuGet 程序包。使用“NuGet 程序包还原”可下载这些程序包。有关更多信息，请参见 http://go.microsoft.com/fwlink/?LinkID=322105。缺少的文件是 {0}。</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Net.Compilers.2.1.0\build\Microsoft.Net.Compilers.props'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.1.0.7\build\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

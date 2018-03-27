@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <link href="image/logo/logo.ico" rel="SHORTCUT ICON" /><!--头图片-->
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <link href="CSS/Login.css" rel="stylesheet" />
+    <title>登录</title>
+    <style>
+    </style>
+</head>
+<body style="background-image: url('image/background/美女.jpg');">
+    <div class="login">
+        <div style="background-color:#ffd100;text-align:center; border:1px solid #ffd100;"><h2>用户登录</h2></div>
+        <div class="login2">
+            <div>
+                <div class="reg">
+                    <a href="Mains.html">返回首页</a>
+                    <a style="margin:0 50px;">|</a>
+                    <a href="Register.html">用户注册</a>
+                </div>
+                <div><input type="text" id="Name" class="test" name="Phone" placeholder="手机号" autocomplete="off" maxlength="11"  onchange="if(/\D/.test(this.value)){alert('手机号只能是数字哦！');this.value='';} if (/^\s*$/g.test(this.value)) { alert('账号密码不能空哦！') }" value="18166076500"  /></div>
+                <div><input type="password"  id="pwd"class="test" name="pwd" placeholder="密码" autocomplete="off" maxlength="20" onchange="if (/^\s*$/g.test(this.value)) { alert('账号密码不能空哦！') }" value="123456"/></div>
+                <div class="pwd">密码忘记？<a href="#">找回密码</a></div>
+                <div class="test3"><input type="button" class="test2" name="button" value="登录" id="btnLogin" /></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            $("#btnLogin").click(function () {
+                var Name = document.getElementById("Name").value;
+                var pwd = document.getElementById("pwd").value;
+                var data = { "Name": Name, "Pwd": pwd };
+                $.ajax({
+                    url: "../SQLData/CustomerLogin.ashx",
+                    type: "Get",
+                    data: data,
+                    success: function (data) {
+                        if (data == 1) {
+                            window.location.href = "Mains.html";
+                        }
+                        else {
+                            alert("登录失败！")
+                        }
+                    }
+                })
+
+            })
+           
+        })
+    </script>
+</body>
+</html>

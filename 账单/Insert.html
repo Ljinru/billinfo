@@ -1,0 +1,75 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link href="image/logo/logo.ico" rel="SHORTCUT ICON" /><!--头图片-->
+    <link href="CSS/CSS3.css" rel="stylesheet" />
+    <link href="CSS/Insert.css" rel="stylesheet" />
+    <meta charset="utf-8" />
+    <title>每日记一记</title>
+    <script src="js/jquery-3.2.1.min.js"></script>
+    <style>
+        .wrapper {
+            display: inline-block;
+            background: url(image/Other/点击添加图片.jpg);
+            height: 180px;
+            width: 240px;
+            overflow: hidden;
+            cursor: pointer
+        }
+
+            .wrapper input {
+                opacity: 0;
+                height: 180px;
+                width: 240px;
+            }
+    </style>
+</head>
+<body style=" background-color:#f4f4f4;">
+    <div>
+        <div class="top2">
+            <div class="logo">
+                <p>
+                    <img src="image/logo/logo.png" style="width:100px;height:23px;" />
+                </p>
+            </div>
+            <div class="menuDiv">
+                <ul>
+                    <li><a href="Mains.html">首页</a></li>
+                    <li><a href="Insert.html">写账单</a></li>
+                    <li>
+                        <a href="#">看账单</a>
+                        <ul>
+                            <li><a href="#">查看当年</a></li>
+                            <li><a href="#">查看月年</a></li>
+                            <li><a href="#">查看日年</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!--登录注册-->
+        </div><!--报头-->
+        <div style="text-align:center;width:1000px;margin-right:auto;margin-left:auto; ">
+            <div style="width:900px;background-color:white; height:70px;margin:20px 0 0 20px;">
+                <input type="button"class="test" style="background-color:#ffd100"  name="btnok" value="确定" />
+            </div>
+            <div class="test2">
+                <div>
+                    <input type="text" class="test" name="cmoney" placeholder="消费金额" autocomplete="off" maxlength="6" />
+                    <input type="date" class="test" name="ctime" placeholder="消费时间" autocomplete="off" />
+                    <input type="text" class="test" name="ctype" list="itemlist" placeholder="消费类型" autocomplete="off" />
+                    <datalist id="itemlist">
+                        <option>微信</option>
+                        <option>支付宝</option>
+                    </datalist>
+                    <textarea class="test" name="e" style="height:80px;padding-top:20px;" placeholder="消费说明"></textarea>
+                </div>
+                <a href="javascript:" class="wrapper" onclick="Show()"><input type="file" name="cimage" value="请选择文件"/></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function Show() {
+          
+        }
+    </script>
+</body>
+</html>
